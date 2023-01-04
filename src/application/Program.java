@@ -21,7 +21,18 @@ public class Program {
 		p1.addComment(c1);
 		p1.addComment(c2);
 		
+		Comment c3 = new Comment("Nice seeing you here!");
+		Comment c4 = new Comment("Good morning!");
+		
+		Post p2 = new Post(sdf.parse("21/06/2018 13:05:44"), "Good morning", 
+				"Good morning young fellows", 3);
+		
+		p2.addComment(c3);
+		p2.addComment(c4);
+		
 		System.out.println(p1);
+		System.out.println(p2);
+		
 	}
 
 }
